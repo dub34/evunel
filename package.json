@@ -1,0 +1,17 @@
+{
+  "name": "evunel-theme",
+  "private": true,
+  "description": "Development tooling for the EVUNEL Shopify theme. Not part of the theme itself.",
+  "scripts": {
+    "prepare": "husky",
+    "commitlint": "commitlint"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "21.2.3",
+    "@commitlint/config-conventional": "21.2.3",
+    "husky": "9.1.7"
+  }
+}

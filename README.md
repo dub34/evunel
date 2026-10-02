@@ -42,6 +42,7 @@ Requirements: Node.js 20+, Git, and access to the EVUNEL development store.
    cd evunel
    git remote add upstream https://github.com/Shopify/dawn.git
    git remote set-url --push upstream no-push
+   npm install   # installs the commit message hook
    ```
 
 3. Start the local development server against the development store:
@@ -82,6 +83,7 @@ Port the relevant hunks by hand or with `git cherry-pick`, test, and record the 
 ## Conventions
 
 - **Language:** README files, code comments and commit messages are written in English.
+- **Commit messages:** [Conventional Commits](https://www.conventionalcommits.org), for example `feat(header): open mega menu on hover` or `fix(cart): update totals after removing a line`. Common types: `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`. A `commit-msg` hook (husky + commitlint) rejects other formats locally, and CI checks them again.
 - **Design tokens:** colours, fonts and the type scale come from `snippets/css-variables.liquid` (EVUNEL UI-kit). Do not hard-code colours or font sizes in components.
 - **Text:** no storefront copy in templates; every string lives in `locales/*.json` so the theme can be translated per market.
 - **Pending client decisions** (see the Decisions sheet in the data model workbook) stay configurable through theme settings and are never hard-coded.

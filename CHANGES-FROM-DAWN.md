@@ -11,13 +11,15 @@ Base: Dawn `v16.0.0` (commit `bc39a7d2`).
 | `.github/CODE_OF_CONDUCT.md`, `.github/CONTRIBUTING.md`, `.github/ISSUE_TEMPLATE/` | Dawn open-source project process; not used for this project. |
 | `.github/workflows/cla.yml`, `.github/workflows/stale.yml` | Shopify CLA bot and stale-issue bot. |
 | `release-notes.md` | Dawn release notes. The upstream version is recorded in the README. |
+| `sections/slideshow.liquid`, `sections/collage.liquid`, `sections/multirow.liquid`, `sections/video.liquid`, `sections/featured-product.liquid` | Not in the prototype. See [docs/removed-from-dawn.md](docs/removed-from-dawn.md). |
+| `assets/collage.css`, `assets/component-modal-video.css`, `assets/video-section.css`, `assets/section-featured-product.css` | Used only by the sections above. |
 
 ## Changed
 
 | File | Change |
 | --- | --- |
 | `README.md` | Replaced with the EVUNEL project README. |
-| `.github/workflows/ci.yml` | Kept Theme Check only. The Lighthouse job needs store secrets and returns in the QA phase. |
+| `.github/workflows/ci.yml` | Kept Theme Check only and granted `checks: write` so it can report results. Added a commit message check. The Lighthouse job needs store secrets and returns in the QA phase. |
 | `.github/PULL_REQUEST_TEMPLATE.md` | Replaced with a project template. |
 | `.gitignore` | Added `.env` files. |
 
@@ -26,3 +28,6 @@ Base: Dawn `v16.0.0` (commit `bc39a7d2`).
 | File | Purpose |
 | --- | --- |
 | `CHANGES-FROM-DAWN.md` | This log. |
+| `docs/dawn-architecture.md` | Notes on how Dawn is built and the section audit. |
+| `docs/removed-from-dawn.md` | What each removed Dawn section did and how to restore it. |
+| `package.json`, `package-lock.json`, `.husky/`, `commitlint.config.mjs` | Development tooling: Conventional Commits validation. Not uploaded to Shopify. |
