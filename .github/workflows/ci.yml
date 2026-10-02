@@ -1,5 +1,10 @@
 name: CI
 on: [push, pull_request]
+# Theme Check reports its results as a check run, which needs write access to checks.
+# New repositories give GITHUB_TOKEN read-only access by default.
+permissions:
+  contents: read
+  checks: write
 jobs:
   # Lighthouse runs against a live store and needs store secrets.
   # It will be added back in the QA phase once the store credentials exist.

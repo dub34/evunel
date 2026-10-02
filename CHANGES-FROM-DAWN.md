@@ -17,7 +17,7 @@ Base: Dawn `v16.0.0` (commit `bc39a7d2`).
 | File | Change |
 | --- | --- |
 | `README.md` | Replaced with the EVUNEL project README. |
-| `.github/workflows/ci.yml` | Kept Theme Check only. The Lighthouse job needs store secrets and returns in the QA phase. |
+| `.github/workflows/ci.yml` | Kept Theme Check only and granted `checks: write` so it can report results. The Lighthouse job needs store secrets and returns in the QA phase. |
 | `.github/PULL_REQUEST_TEMPLATE.md` | Replaced with a project template. |
 | `.gitignore` | Added `.env` files. |
 
