@@ -26,3 +26,4 @@ Base: Dawn `v16.0.0` (commit `bc39a7d2`).
 | File | Purpose |
 | --- | --- |
 | `CHANGES-FROM-DAWN.md` | This log. |
+| `docs/dawn-architecture.md` | Notes on how Dawn is built and the section audit. |
