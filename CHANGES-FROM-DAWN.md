@@ -27,4 +27,5 @@ Base: Dawn `v16.0.0` (commit `bc39a7d2`).
 | --- | --- |
 | `CHANGES-FROM-DAWN.md` | This log. |
 | `docs/dawn-architecture.md` | Notes on how Dawn is built and the section audit. |
+| `docs/removed-from-dawn.md` | What each removed Dawn section did and how to restore it. |
 | `package.json`, `package-lock.json`, `.husky/`, `commitlint.config.mjs` | Development tooling: Conventional Commits validation. Not uploaded to Shopify. |

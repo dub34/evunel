@@ -148,5 +148,5 @@ Decision key: **Keep** — use as is or with light restyling; **Rework** — kee
 ## 8. Next steps
 
 1. Review the audit above.
-2. Remove the ten sections, their snippets and assets in one commit, and update `CHANGES-FROM-DAWN.md`.
+2. Remove the ten sections. Five have no dependants and are removed now; the other five are woven into sections we rework and are removed in plan tasks 4.2, 4.3 and 7.1. Each one is described in [removed-from-dawn.md](removed-from-dawn.md) with restore steps.
 3. Start phase 2: tokens, fonts, colour schemes and settings cleanup.
